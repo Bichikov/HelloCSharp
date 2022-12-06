@@ -51,8 +51,9 @@ int[] CreaterArif(int[,] matrix, int row, int col)
             {
                 arifmetic = matrix[i, j] + arifmetic;
             }
-            array1[k] = arifmetic;
         }  
+    array1[k] = arifmetic;
+    arifmetic = 0;
     }
     return array1;
 }
