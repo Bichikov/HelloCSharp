@@ -59,16 +59,43 @@ int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите кол-во столбцов для массива: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 
+while (rows < 0 || columns < 0) 
+{
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("Введите положительные числа: ");
+
+Console.Write("Введите кол-во строк для массива: ");
+rows = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите кол-во столбцов для массива: ");
+columns = Convert.ToInt32(Console.ReadLine());
+}
+
 int[,] array = CreateMatrixRndInt(rows ,columns ,2, 8);
 PrintMatrix(array);
 
-Console.WriteLine("");
 
-Console.Write("Введите индекс по строке: ");
+Console.Write("(Поиск числа) Введите индекс по строке: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите индекс по столбцу: ");
+Console.Write("(Поиск числа) Введите индекс по столбцу: ");
 int b = Convert.ToInt32(Console.ReadLine());
+
+while (a<0 || b <0) 
+{
+Console.WriteLine("");
+Console.WriteLine("");
+
+Console.WriteLine("Введите положительные числа: ");
+
+Console.Write("(Поиск числа) Введите индекс по строке: ");
+a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("(Поиск числа) Введите индекс по столбцу: ");
+b = Convert.ToInt32(Console.ReadLine());
+}
+
 
 Console.WriteLine("");
 
