@@ -50,7 +50,7 @@ void Arithmetic(int[,] array)
         {
             sum += array[i, j];
         }
-        arithm = sum / array.GetLength(0);
+        arithm = Math.Round(sum / array.GetLength(0),1,MidpointRounding.ToZero);
         sum = 0;
         Console.WriteLine($"Среднее арифметическое {j + 1} столбца = {arithm}");
     }
