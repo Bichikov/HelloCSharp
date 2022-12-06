@@ -44,11 +44,11 @@ string Number(int[,] matrix, int ax, int bx, int row, int col)
 {
     int ay = ax -1;
     int by = bx -1; 
-    if (ay <= row && by <= col) 
+    if (ay > row-1 || by > col-1) 
     {
-        return $"Элемент массива найдет и = {matrix[ay,by]}";
+        return $"Такого элемента в массиве нет";
     }
-return "Такого элемента в массиве нету";
+return $"Элемент массива найдет и = {matrix[ay,by]}";
 }
 
 Console.Clear();
@@ -69,6 +69,8 @@ int a = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите индекс по столбцу: ");
 int b = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("");
 
 string number = Number(array,a, b, rows, columns);
 
