@@ -53,7 +53,7 @@ void ChangeArray(int[,] matrix) // Замена первой и посоедне
 Console.Clear();
 
 int[,] array2D = CreateMatrixRndInt(3, 4, -50, 50);
-PrintMatrix(array2D); //создание массива
+PrintMatrix(array2D);
 
 Console.WriteLine();
 
