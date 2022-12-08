@@ -42,6 +42,6 @@ void PrintIndex(int[,,] arr)
     }
 }
 
-int[,,] array3D = new int[3, 3, 3];
+int[,,] array3D = new int[3, 2, 2];
 FillArray(array3D);
 PrintIndex(array3D);
