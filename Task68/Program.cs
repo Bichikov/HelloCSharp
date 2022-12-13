@@ -3,6 +3,7 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
+
 Console.WriteLine("Введите число m");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число n");
@@ -18,4 +19,4 @@ int A(int m, int n)
     else
         return A(m - 1, A(m, n - 1));
 }
-Console.WriteLine($"Значение функции Аккермана равно {A(n, m)}");
+Console.WriteLine($"Значение функции Аккермана равно {A(m, n)}");
