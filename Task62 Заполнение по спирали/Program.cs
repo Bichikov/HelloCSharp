@@ -21,7 +21,7 @@ void SpiralArray(int[,] array1)
         else if (i >= j && i + j > array1.GetLength(0) - 1)
             j--;
         else
-            i--;
+            
         num++;
     }
 }
