@@ -49,9 +49,11 @@ for (int i = 0; i < array1.GetLength(0); i++)
 
 Console.Write("Введите кол-во строк и столбцов: ");
 int rowsColumns = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите кол-во строк и столбцов: ");
+int rowsColumns2 = Convert.ToInt32(Console.ReadLine());
 
 
-int[,] array = new int[rowsColumns,rowsColumns];
+int[,] array = new int[rowsColumns,rowsColumns2];
 
 SpiralArray(array);
 PrintArray(array);
